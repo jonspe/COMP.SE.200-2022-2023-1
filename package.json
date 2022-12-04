@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --coverage && coveralls < coverage/lcov.info"
+    "test": "jest",
+    "test-cov": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "author": "",
   "license": "MIT",
