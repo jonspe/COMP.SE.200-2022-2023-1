@@ -17,7 +17,7 @@ jobs:
       - name: npm install
         run: npm install
 
-      - name: Run test coverage with coverallls lcov
+      - name: Run test coverage with coveralls lcov
         run: npm run test-coveralls
 
       - name: Coveralls
