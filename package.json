@@ -8,6 +8,11 @@
     "test": "jest",
     "test-cov": "jest --coverage && coveralls < coverage/lcov.info"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**.js"
+    ]
+  },
   "author": "",
   "license": "MIT",
   "devDependencies": {
