@@ -20,14 +20,15 @@ describe("Test toString different value types", () => {
     expect(toString(str)).toBe(str)
   })
 
-  it("should convert null to null string", () => {
-    expect(toString(null)).toBe("null")
+  it("should convert null to empty string", () => {
+    expect(toString(null)).toBe("")
   })
 
-  it("should convert undefined to undefined string", () => {
-    expect(toString(undefined)).toBe("undefined")
+  it("should convert undefined to empty string", () => {
+    expect(toString(undefined)).toBe("")
   })
 
+  // object like strings are not documented, so javascript default behavior is expected
   it("should convert object to string", () => {
     expect(toString({ a: 1, b: 2 })).toBe("[object Object]")
   })
@@ -75,4 +76,5 @@ describe("Test toString different value types", () => {
   it("should convert weakmap to string", () => {
     expect(toString(new WeakMap())).toBe("[object WeakMap]")
   })
+  
 })
